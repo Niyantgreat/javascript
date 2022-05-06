@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<img id="myImage"  src="fan_on.jpg" width="150" height="180">
+
+
+
+<p>Click the switch on button to turn on the light and the switch off button to switch off the light.</p>
+<img src="switch_on.jpg" onclick="OnImage()" width="75" height="75"  >
+<p>Switch on</p>
+<img src="switch_off.jpg" onclick="OffImage()" width="75" height="75" >
+<p>Switch off</p>
+</center>
+<script>
+function OnImage() {
+  var image = document.getElementById('myImage');
+     image.src = "fan_off.jpg";
+ }
+ function OffImage(){
+     var image2=document.getElementById('myImage');
+     image2.src="fan_on.jpg";
+ }
+</script>
+
+</body>
+</html>
